@@ -23,7 +23,7 @@ const MONGOURL = process.env.MONGO_URL;
 
 mongoose
   .connect(MONGOURL)
-  .then(() => {
+  .then(() => {  
     console.log("DB connected successfully.");
     app.listen(PORT, () => {
       console.log(`Server is running on port: ${PORT}`);
